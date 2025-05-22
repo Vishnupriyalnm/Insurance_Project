@@ -329,7 +329,7 @@ a:focus {
 
 .slider_section .detail-box a:hover {
   background-color: transparent;
-  color: #17b978;
+  color: red;
 }
 
 .slider_section .img-box img {
@@ -361,8 +361,8 @@ a:focus {
 }
 
 .slider_section .carousel_btn-box a:hover {
-  background-color: #17b978;
-  border-color: #17b978;
+  background-color: red;
+  border-color: red;
 }
 
 .slider_section .carousel_btn-box .carousel-control-prev {
