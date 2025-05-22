@@ -193,7 +193,7 @@ a:focus {
 }
 
 .custom_nav-container .nav_search-btn:hover {
-  color: #17b978;
+  color: red;
 }
 
 .custom_nav-container .navbar-toggler {
