@@ -21,12 +21,14 @@ pipeline {
 }
             }
         }
-        stage('deploy using kubernetes') {
+       stage('Deploy Using Docker') {
             steps {
-                sh 'sudo kubectl apply -f kubernetesfile.yml'
-                sh 'sudo kubectl get all'
+                script {
+                    sh 'docker stop insurancedemo || true'
+                    sh 'docker rm insurancedemo || true'
+                    sh 'docker run -d --name insurancedemo -p 9090:8081 vishnupriyalnm/insurancedemo:1'
+                }
             }
         }
     }
 }
-
